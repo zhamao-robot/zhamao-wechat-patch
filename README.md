@@ -1,5 +1,5 @@
 # zhamao-wechat-patch
-炸毛框架的微信公众号兼容层模块（还没写完）
+炸毛框架的微信公众号兼容层模块
 
 ## 介绍
 这个模块是一个特殊的炸毛框架模块，用于让框架兼容 **微信公众号开发者平台** 的被动消息回复。
@@ -14,7 +14,7 @@
 ## 安装
 1. 将 `src/Module/WechatPatch` 目录拷贝到 `zhamao-framework` 框架下的 `src/Module/` 目录下
 
-2. 将 `ModBase.php` 覆盖到 `src/ZM/ModBase.php` 
+2. 将 `ModBase.php` 覆盖到 `src/ZM/ModBase.php`，因为兼容层需要加入 `wechat` 类型事件的处理，需要重写部分模块函数。
 
 ## 微信公众号端设置
 1. 登录公众号，打开开发者模式
